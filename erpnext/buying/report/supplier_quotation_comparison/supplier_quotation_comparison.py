@@ -285,14 +285,14 @@ def get_columns(filters):
 
 def get_message():
 	return f"""<span class="indicator">
-		{_("Valid till :")} &nbsp;&nbsp;
+		{_("Valid Till")}:&nbsp;&nbsp;
 		</span>
 		<span class="indicator orange">
 		{_("Expires in a week or less")}
 		</span>
 		&nbsp;&nbsp;
 		<span class="indicator red">
-		{_("Expires today / Already Expired")}
+		{_("Expires today or already expired")}
 		</span>"""
 
 
