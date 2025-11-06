@@ -21,7 +21,7 @@ def transaction_processing(data, from_doctype, to_doctype, args=None):
 
 	length_of_data = len(deserialized_data)
 
-	frappe.msgprint(_("Started a background job to create {1} {0}").format(to_doctype, length_of_data))
+	frappe.msgprint(_("Started a background job to create {1} {0}").format(_(to_doctype), _(length_of_data)))
 	frappe.enqueue(
 		job,
 		deserialized_data=deserialized_data,
